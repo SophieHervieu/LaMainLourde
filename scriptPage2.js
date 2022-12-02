@@ -19,7 +19,33 @@ nextBtn.addEventListener('click', () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    /*text.textContent = counter + "/" + (carouselImages.length-2);
+    switch (counter){
+        case 0 :
+            text.textContent = "image6";
+            break;
+        case 5:
+            text.textContent = "image1";
+            break;
+        case 1: 
+            text.textContent = "image1";
+            break;
+        case 2:
+            text.textContent = "image2";
+            break;
+        case 3:
+            text.textContent = "image3";
+            break;
+        case 4:
+            text.textContent = "image4";
+            break;
+        case 5:
+            text.textContent = "image5";
+        break;
+        case 6:
+            text.textContent = "image6";
+            break;
+    }/*
+    text.textContent = counter + "/" + (carouselImages.length-2);
     if (counter === carouselImages.length -1) {
         text.textContent = 1 + "/" + (carouselImages.length-2);
     }*/
@@ -29,6 +55,32 @@ prevBtn.addEventListener('click', () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    switch (counter){
+        case 0 :
+            text.textContent = "image1";
+            break;
+        case 5:
+            text.textContent = "image6";
+            break;
+        case 1: 
+            text.textContent = "image1";
+            break;
+        case 2:
+            text.textContent = "image2";
+            break;
+        case 3:
+            text.textContent = "image3";
+            break;
+        case 4:
+            text.textContent = "image4";
+            break;
+        case 5:
+            text.textContent = "image5";
+        break;
+        case 6:
+            text.textContent = "image6";
+            break;
+    }
     /*text.textContent = counter + "/" + (carouselImages.length-2);
     if (counter === 0) {
         text.textContent = (counter+1) + "/" + (carouselImages.length-2);
