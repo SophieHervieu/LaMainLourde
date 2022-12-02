@@ -1,0 +1,82 @@
+/* Import de police */
+@import 
+url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+
+
+/* STYLE BODY */
+body {
+    margin: 0; /* supprime la marge du body */
+    background-image: url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); /* import photo */
+    background-repeat: no-repeat; /* affiche l'image sans répétition */
+    background-position: -350px 280px; /* place l'image dans le body */
+}
+
+
+/* TITRE */
+.titre {
+    text-align: center; /* centre le titre */
+    font-size: 45px; /* définit la taille de police */
+    padding-top: 75px; /* positionne le titre */
+    padding-bottom: 80px; /* positionne le titre */
+    font-family: 'IM Fell DW Pica', serif; /* définit le type de police */
+}
+
+
+/* MISE EN PAGE ARTICLE */
+.article {
+    padding: 50px; /* positionne le bloc article */
+    display: flex; /* passe l'élément en flex */
+    justify-content: center; /* centre le contenu */
+    text-align: justify; /* justifie le texte */
+}
+
+/* Style de l'image */
+.drake {
+    height: 250px; /* taille de l'image */
+    margin-top: 2.5rem; /* définit l'espace de marge top */
+    border-radius: 30%; /* arrondis les angles de la photo */
+    padding: 30px;
+}
+
+/* Mise en page de l'article */
+.histoire {
+    display: flex; /* passe l'élément en flex */
+    flex-direction: column; /* positionne les paragraphes en colone */
+    justify-content: center; /* centre les articles */
+    padding: 3rem;
+    font-size: 18px; /* définit la taille de police */
+    font-family: 'IM Fell DW Pica', serif; /* définit la police */
+} 
+
+
+/* DISPOSITION DE L'IMAGE BAS DE PAGE */
+.mojitoEnd {
+    display: flex; /* passe l'élément en flex */
+    justify-content: center; /* centre le contenu */
+    padding: 3rem;
+}
+
+/* Style de l'image */
+#mojito {
+    border-radius: 10%; /* arrondis les angles de la photo */
+    width: 80%; /* dimensionne l'image */
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .article {
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drake {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
