@@ -19,7 +19,8 @@ nextBtn.addEventListener('click', () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    switch (counter){
+
+   /* switch (counter){
         case 0 :
             text.textContent = "image6";
             break;
@@ -43,19 +44,19 @@ nextBtn.addEventListener('click', () => {
         break;
         case 6:
             text.textContent = "image6";
-            break;
+            break;*/
     }/*
     text.textContent = counter + "/" + (carouselImages.length-2);
     if (counter === carouselImages.length -1) {
         text.textContent = 1 + "/" + (carouselImages.length-2);
     }*/
-});
+);
 prevBtn.addEventListener('click', () => {
     if (counter <= 0) return;
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    switch (counter){
+   /* switch (counter){
         case 0 :
             text.textContent = "image1";
             break;
@@ -80,7 +81,7 @@ prevBtn.addEventListener('click', () => {
         case 6:
             text.textContent = "image6";
             break;
-    }
+    }*/
     /*text.textContent = counter + "/" + (carouselImages.length-2);
     if (counter === 0) {
         text.textContent = (counter+1) + "/" + (carouselImages.length-2);
