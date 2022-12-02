@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 100px;
+    padding: 0;
+    border: 1px solid black;
+}
+p{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(16, 19, 22);
+    font-style: italic;
+    font-style: strong;
+    font-weight: bold;
+}
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    background-color:#C3F3FF;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.rotate1 {
+    position: relative;
+    top: 40px;
+    left: -0px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-5deg);
+    transition: all 0.4s;
+}
+
+.rotate1:hover {
+    transform: rotate(20deg);
+}
+
+.rotate2 {
+    position: relative;
+    top: 40px;
+    left: 180px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-5deg);
+    transition: all 0.4s;
+}
+
+.rotate2:hover {
+    transform: rotate(20deg);
+}
+
+
+.rotate3 {
+    display: flex;
+    justify-content: center;
+    transform: rotate(5deg);
+    transition: all 0.4s;
+}
+
+.rotate3:hover {
+    transform: rotate(-10deg);
+}
+
+.rotate4 {
+    display: flex;
+    justify-content: center;
+    transform: rotate(340deg);
+    transition: all 2.4s;
+}
+
+.rotate4:hover {
+    transform: rotate(10deg);
+}
+#picture1{
+    position:relative;
+    top: 2em;
+    right: 20em;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    transform: rotate(-15deg);
+    transition: all 0.4s;
+
+}
+#picture2{
+position: relative;
+top: 14em;
+left: 40em;
+width: 10%;
+height: 30%;
+display: flex;
+justify-content: center;
+transform: rotate(328deg);
+transition: all 0.4s;
+}
+
+
+#picture3{
+position: relative;
+top: 4em;
+right: 10em;
+width: 10%;
+height: 30%;
+display: flex;
+justify-content: flex-end;
+transform: rotate(5deg);
+transition: all 0.4s;
+}
+
+#picture4{
+position: relative;
+top: 13em;
+left: 30em;
+width: 10%;
+height: 30%;
+display: flex;
+justify-content: center;
+transform: rotate(-5deg);
+transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    div{
+        width: 80%;
+        font-size:1em;
+        /* padding: 25px;
+        height: 400px; */
+        }
+    p{
+        font-size:  25px;
+        padding: 25px;
+        }
+    #picture1{
+        display: none;
+    }
+    #picture2{
+        display: none;
+    }
+    #picture3{
+        display:none;
+    }
+    #picture4{
+        display:none;
+    }
+    .rotate2{      
+        top: 10px;
+        left: 0;
+        height: 250px;      
+    }
+}
