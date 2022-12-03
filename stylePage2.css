@@ -25,7 +25,7 @@
 body {
     height: var(--heightBody);
     min-width: 320px;
-    border: 2px solid red;
+    border: 2px solid rgb(146, 137, 6);
 }
 
 header {
@@ -140,8 +140,9 @@ img {
 /*
 .text-container {
     display: flex;
-    justify-content: flex-end;
+    border: 2px solid black
 }
+
 #text {
     color: black;
     font-size: 2vw;
@@ -173,9 +174,9 @@ img {
     padding-bottom: var(--paddingUstensileBottom);
 }
 footer {
-    height: 5%;
+    height: fit-content;
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid rgb(51, 67, 214);
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Media queries  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
@@ -243,3 +244,86 @@ footer {
         --paddingUstensileBottom: 50px;
     }
 }    
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Footer  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.dropbtn {
+    background-image: url("assets/Button.png");
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #ffffff;
+}
+
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding-bottom: 40px;*/
+    border: 2px solid red;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content .boutton {
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content .boutton:hover {
+    background-color: #f1f1f1;
+}
+
+
+.show {display:block;
+    margin: 0 0px 169px 0;
+}
+
+/*css des boutton de changement de page*/
+
+.preNext {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 80px;
+    
+}
+
+.previous {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheGauche.png");
+    background-color: #c3f3ff;
+    background-size: cover;
+    border-radius: 15px;
+}
+.next {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheDroite.png");
+    background-color: #c3f3ff;
+    background-size: cover;
+    border-radius: 15px;
+}
