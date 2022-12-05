@@ -8,7 +8,7 @@
     <title>Accueil</title>
 </head>
 <body>
-
+    
     <!-- TITRE -->
     <h1 class="titre">Un peu d'histoire ...</h1>
     
@@ -40,11 +40,33 @@
 
 <!-- IMAGE BAS DE PAGE -->
 <div class="mojitoEnd">
-    <img id="mojito" src="https://images.pexels.com/photos/7376806/pexels-photo-7376806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="un verre de mojito sur une table">
+    <img id="mojito" src="assets/mojito.jpeg" alt="un verre de mojito sur une table">
 </div>
 
 
+<!-- FOOTER / MENU -->
+<footer>
+  <!-- Bouton du menu -->
+  <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"></button>
+
+      <!-- Menu déroulant -->
+      <div id="myDropdown" class="dropdown-content">
+          <a class="boutton" href="0001-Accueil.html">Accueil</a>
+          <a class="boutton" href="page2.html">Ingredient & Instrument</a>
+          <a class="boutton" href="#">Recette</a>
+          <a class="boutton" href="#">Temoignage</a>
+      </div>
+
+      <!-- Page suivante & précédente -->
+      <div class="preNext">
+          <a class="next" href="page2.html"></a>
+      </div>
+  </div>
+</footer>
+
 <!-- Link to JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
