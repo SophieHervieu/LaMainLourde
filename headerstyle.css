@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 60px;
+    background-color: #C3F3FF;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0px
+}
+
+.imagenav {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 10px;
+    height: 100px;
+}
+
+.navtitle1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* à 10%/50% du parent référent */
+    transform: translate(-50%, -50%);
+    /* décalage de 50% de sa propre taille */
+    font-family: "Fascinate Inline";
+    font-size: 32px;
+    color: #636262;
+}
+
+.navtitle2 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: "Girassol";
+    font-size: 60px;
+    color: #3f3f3f;
+}
+
+.navdeco {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagenav {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        margin: 10px;
+        height: 80px;
+    }
+
+    .navtitle1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    .navtitle2 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+    }
+
+    .navdeco {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        height: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .imagenav {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        margin: 10px;
+        height: 45px;
+    }
+
+    .navtitle1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+    }
+
+    .navtitle2 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
+
+    .navdeco {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        height: 100px;
+    }
+
+}
