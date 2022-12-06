@@ -8,37 +8,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Main Lourde</title>
     <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="headerstyle.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <section class="test">
-        <div class="rotate rotate1">
-            <div id="picture1"><img src="/laMainLourde/picture1/skull.jpg" alt="Skull"></div>
-            <p>Dangers de l'alcool :<br>
-                mauvaise coordination des mouvements<br>
-                élocution troublée<br>
-                diminution des réflexes et de la vigilance<br>
-                état de somnolence<br>
-                pertes de mémoire allant jusqu’au trou noir <br>
-                hypothermie <br>
-                coma éthylique pouvant provoquer la mort.</p>
+    <header class="header">
+        <div class="top"></div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#C3F3FF" fill-opacity="1"
+                    d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,218.7C672,181,768,107,864,74.7C960,43,1056,53,1152,85.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
         </div>
-        <div class="rotate rotate2">
-            <div id="picture2"><img src="/laMainLourde/picture1/help.jpg" alt="Help"></div>
+        <div>
+            <a href="index.html"><img class="imagenav" src="/assets/logo.png" alt="Logo La Main Lourde" /></a>
+        </div>
+        <div class="navtitle1">COCKTAIL</div>
+        <div class="navtitle2">MOJITO</div>
+        <div><img class="navdeco" src="/assets/mojitoNav.png" alt="Verre de Mojito et brin de menthe"></div>
+    
+</header>
+    <section class="test">
+        <div class="lastPage" >
+        <div class="rotate1">
+            <div id="picture1"><img src="/picture1/crossbones-2029570_960_720.png" alt="Skull" style="width: 200px;"></div>
+            <p>Dangers de l'alcool :<br>
+                Mauvaise coordination des mouvements<br>
+                Élocution troublée<br>
+                Diminution des réflexes et de la vigilance<br>
+                État de somnolence<br>
+                Pertes de mémoire allant jusqu’au trou noir <br>
+                Hypothermie <br>
+                Coma éthylique pouvant provoquer la mort.</p>
+        </div>
+        <div class="rotate2">
+            <div id="picture2"><img src="/picture1/bottle-34127__340.png" alt="Help"></div>
             <p>vous avez besoin d'aide?</p>
             <p><a href="https://www.alcool-info-service.fr/%22%3E">
                 Alcool info service</a></p>
         </div>
-        <div class="rotate rotate3">
-            <div id="picture3"><img src="/laMainLourde/picture1/warning.jpg" alt="honey"></div>
+        <div class="rotate3">
+            <div id="picture3" ><img src="/picture1/caution-152926_960_720.png" alt="honey"></div>
             <p>Témoignages</p>
+            <div class="witness">
+                <div class="box">Antoine<br>
+                    Candy bear claw icing cupcake halvah carrot cake dragée chupa chups apple pie. Caramels tootsie roll chocolate cake tart pie cheesecake apple pie shortbread.</div>
+                <div class="box">Moana<br>
+                    Candy bear claw icing cupcake halvah carrot cake dragée chupa chups apple pie. Caramels tootsie roll chocolate cake tart pie cheesecake apple pie shortbread.</div>
+                <div class="box">Samy<br>
+                    Candy bear claw icing cupcake halvah carrot cake dragée chupa chups apple pie. Caramels tootsie roll chocolate cake tart pie cheesecake apple pie shortbread.</div>
+            </div>
         </div>
-        <div class="rotate rotate4">
-            <div id="picture4"><img src="/laMainLourde/picture1/contact.jpg"></div>
-            <p>Contact</p>
+        <div class="rotate4">
+            <div id="picture4"><img src="/picture1/mail-6250209__340.png"></div>
+            <p><a href="mailto:email@example.com">Contact</a></p>
         </div>
+        <div class="Sick">
+            <a href="https://youtu.be/Xs9sTUCFcZU"></a>
+        </div>
+    </div>
     </section>
-
+<script src="script.js"></script>
+<footer>
+    <!-- bouton du menu -->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"></button> 
+        <!-- menu deroulant -->
+        <div id="myDropdown" class="dropdown-content">
+            <a class="boutton" href="#">Accueil</a>
+            <a class="boutton" href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient & Instrument</a>
+            <a class="boutton" href="#">Recette</a>
+            <a class="boutton" href="#">Temoignage</a>
+        </div>
+        <div class="preNext">
+        <!-- page suivante & precedente -->
+            <a class="previous" href="#"></a>
+            <a class="next" href="#"></a>
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>
