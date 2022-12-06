@@ -1,3 +1,8 @@
+@import
+url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Girassol&display=swap%27');
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,12 +10,133 @@
 body {
     margin: 0;
     background-color: white;
-    font-family: Verdana;
+    font-family: 'IM Fell DW Pica', serif;
+    background-image: url('assets/mentheArrierePlan.png');
+    background-repeat: no-repeat;
+    background-position: -350px 500px;
+}
+
+/*Header*/
+.top {
+    height: 60px;
+    background-color: #C3F3FF;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0);
+    top: 0px
+}
+
+.imagenav {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    margin: 10px;
+    height: 100px;
+}
+
+.navtitle1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* à 10%/50% du parent référent */
+    transform: translate(-50%, -50%);
+    /* décalage de 50% de sa propre taille */
+    font-family: "Fascinate Inline";
+    font-size: 32px;
+    color: #3f3f3f;
+}
+
+.navtitle2 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: "Girassol";
+    font-size: 60px;
+    color: #3f3f3f;
+}
+
+.navdeco {
+    position: absolute;
+    bottom: 470px;
+    right: 15px;
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagenav {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        margin: 10px;
+        height: 80px;
+    }
+
+    .navtitle1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    .navtitle2 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+    }
+
+    .navdeco {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        height: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .imagenav {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        margin: 10px;
+        height: 45px;
+    }
+
+    .navtitle1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+    }
+
+    .navtitle2 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
+
+    .navdeco {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        height: 100px;
+    }
+
 }
 
 /*Titre page*/
 h1 {
     color: black;
+    font-family: 'IM Fell DW Pica', serif;
     text-align: center;
     max-width: 65ch;
     margin-left: auto;
@@ -21,8 +147,18 @@ h1 {
 /*Etapes*/
 
 .etapes {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    opacity: 2%;
+    filter: blur(10px);
+}
+
+.etapes:hover {
+    filter: blur(0);
+    opacity: 100%;
+    transition: 2s;
 }
 
 .etape {
@@ -30,6 +166,10 @@ h1 {
    padding: 50px;
    display: flex;
    justify-content: space-around;
+   /*filter: blur(1px);
+   transform: scale (1.4, 1.4);
+   transition: all 3s ease-in;
+   visibility: visible;*/
 }
 
 /*Blocs images*/
@@ -56,91 +196,14 @@ div.thirdImg {
 
 article {
     max-width: 65ch;
-    background-color: white;
-    border: 0.2ch solid black;
+    background-color: #ffffff;
+    border: 0.2ch solid #ffffff;
+    /*backdrop-filter: blur(25px) saturate(69%);
+    -webkit-backdrop-filter: blur(25px) saturate(69%);
+    background-color: rgba(195, 243, 255, 0.28);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);*/
     padding: 30px;
-}
-
-/*Footer*/
-.dropbtn {
-    background-image: url("assets/Button.png");
-    background-size: cover;
-    height: 30px;
-    width: 30px;
-    border: none;
-    cursor: pointer;
-    margin: 30px;
-}
-
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #ffffff;
-}
-
-
-.dropdown {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 40px;
-    
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-
-.dropdown-content .boutton {
-    color: rgb(0, 0, 0);
-    padding: 8px 0px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content .boutton:hover {
-    background-color: #f1f1f1;
-}
-
-
-.show {display:block;
-    margin: 0 0px 169px 0;
-}
-
-/*css des boutton de changement de page*/
-
-.preNext {
-    margin-right: 40px;
-    display: flex;
-    justify-content: space-around;
-    column-gap: 80px;
-    
-}
-
-.previous {
-    margin: 0px;
-    height: 15px;
-    width: 30px;
-    background-image: url("assets/flecheGauche.png");
-    background-color: #c3f3ff;
-    background-size: cover;
-    border-radius: 15px;
-}
-.next {
-    margin: 0px;
-    height: 15px;
-    width: 30px;
-    background-image: url("assets/flecheDroite.png");
-    background-color: #c3f3ff;
-    background-size: cover;
-    border-radius: 15px;
 }
 
 /*Version mobile*/
