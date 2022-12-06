@@ -1,19 +1,27 @@
-/* Import de police */
+/* Police */
 @import 
-url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap'); /* importe la police Google */
 
 
-/* STYLE BODY */
-body {
+/* ######################################### */
+/*               BODY/BACKGROUND             */
+/* ######################################### */
+
+/* Propriétés body */
+body { 
     margin: 0; /* supprime la marge du body */
-    background-image: url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); /* import photo */
+    background-image: url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"), url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); /* import photo */
     background-repeat: no-repeat; /* affiche l'image sans répétition */
-    background-position: -350px 280px; /* place l'image dans le body */
+    background-position: -350px 280px, -350px 1680px; /* place l'image dans le body */
 }
 
 
-/* TITRE */
-.titre {
+/* ######################################### */
+/*                   TITRE                   */
+/* ######################################### */
+
+/* Position titre */
+.titre { 
     text-align: center; /* centre le titre */
     font-size: 45px; /* définit la taille de police */
     padding-top: 75px; /* positionne le titre */
@@ -22,16 +30,20 @@ body {
 }
 
 
-/* MISE EN PAGE ARTICLE */
+/* ######################################### */
+/*                  ARTICLE                  */
+/* ######################################### */
+
+/* Mise en page bloc article */
 .article {
-    padding: 50px; /* positionne le bloc article */
+    padding: 50px; /* positionne le bloc */
     display: flex; /* passe l'élément en flex */
     justify-content: center; /* centre le contenu */
     text-align: justify; /* justifie le texte */
 }
 
-/* Style de l'image */
-.drake {
+/* Propriétés de l'image */
+.drake { 
     height: 250px; /* taille de l'image */
     margin-top: 2.5rem; /* définit l'espace de marge top */
     border-radius: 30%; /* arrondis les angles de la photo */
@@ -48,22 +60,117 @@ body {
     font-family: 'IM Fell DW Pica', serif; /* définit la police */
 } 
 
+/* ######################################### */
+/*                BAS DE PAGE                */
+/* ######################################### */
 
-/* DISPOSITION DE L'IMAGE BAS DE PAGE */
-.mojitoEnd {
+/* Disposition de l'image */
+.mojitoEnd { 
     display: flex; /* passe l'élément en flex */
     justify-content: center; /* centre le contenu */
     padding: 3rem;
 }
 
 /* Style de l'image */
-#mojito {
-    border-radius: 10%; /* arrondis les angles de la photo */
+#mojito { 
+    border-radius: 20%; /* arrondis les angles de la photo */
     width: 80%; /* dimensionne l'image */
+    opacity: 100%;
 }
 
 
-/* RESPONSIVE */
+/* ######################################### */
+/*               MENU/NAVIGATION             */
+/* ######################################### */
+
+/* Style menu */
+.dropbtn { 
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+/* hover menu caché */
+.dropbtn:hover, .dropbtn:focus { 
+    background-color: #ffffff00;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 10px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px) saturate(149%);
+    -webkit-backdrop-filter: blur(4px) saturate(149%);
+    background-color: rgba(133, 147, 152, 0.232);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.dropdown-content .boutton {
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .boutton:hover {
+    color: rgb(112, 175, 248);
+    text-shadow: -1px 1px 10px rgba(112, 175, 248, 0.808);
+}
+
+.show {
+    display:block;
+    margin: 0 0px 169px 0;
+}
+
+/* Style des bouttons de changement de page */
+.preNext {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 80px;   
+}
+
+.previous {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheGauche.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.next {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheDroite.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+/* ######################################### */
+/*                 RESPONSIVE                */
+/* ######################################### */
+
 @media screen and (max-width: 768px) {
   .article {
     font-size: 15px;
@@ -78,5 +185,17 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
   }
+
+  .mojitoEnd { 
+    display: flex; 
+    justify-content: center;
+    padding: 3rem;
+}
+
+#mojito { 
+    border-radius: 50%; 
+    width: 80%; 
+}
 }
