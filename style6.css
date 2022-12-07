@@ -12,15 +12,25 @@ body {
   background-image: url(/assets/mentheArrierePlan.png);
   background-repeat: no-repeat; /* affiche l'image sans répétition */
   background-position: -350px 700px; /* place l'image dans le body */
-  /* border: 1px solid black; */
+  /* border: 1px solid #C3F3FF; */
 }
 body:hover {
   filter:none;
-  /* transition-delay: 1s;            */
-  /* transition-duration: 3s; */
-  /* transition-property:initial; */
+  transition-delay: 1s;           
+  transition-duration: 3s;
+  transition-property:initial;
 }
-
+/* fall effect */
+.effect{
+    position: relative;
+    animation: mymove 1s;
+    animation-delay: 15s;
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 900px;}
+  }
 p{
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,26 +39,24 @@ p{
   font-weight: bold;
   padding: 35px;
 }
-
 .test {
-  /* transition:all 15s; */
-  /* filter:blur(0.2rem); */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  transition:all 15s;
+  filter:blur(0.2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: sans-serif;
   font-size: 18px;
-  /* margin: 0 30em 0 15em; */
   padding:0 10em 0 10em;
   border: 1px solid #C3F3FF;
   height: auto;
 } 
-/* .test:hover { */
-  /* filter:none; */
-  /* transition-delay: 1s;        */
-  /* transition-duration: 3s; */
-  /* transition-property:initial; */
-/* } */
+.test:hover {
+  filter:none;
+  transition-delay: 1s;       
+  transition-duration: 3s;
+  transition-property:initial;
+}
 div .lastPage {
   background-color:#C3F3FF;
   display: flex;
@@ -56,7 +64,6 @@ div .lastPage {
   width: 50em;
   
 }
-
 .rotate1 {
   position: relative;
   top: 40px;
@@ -66,14 +73,10 @@ div .lastPage {
   transform: rotate(-5deg);
   transition: all 0.4s;
   background-color:#C3F3FF;
-
 }
-
-
 .rotate1:hover {
   transform: rotate(20deg);
 }
-
 .rotate2 {
   position: relative;
   top: 40px;
@@ -84,13 +87,10 @@ div .lastPage {
   transition: all 0.4s;
   background-color:#C3F3FF
 }
-
 .rotate2:hover {
   transform: rotate(20deg);
   
 }
-
-
 .rotate3 {
   display: flex;
   justify-content: center;
@@ -99,11 +99,9 @@ div .lastPage {
   background-color:#C3F3FF;
   margin-top:100px;
 }
-
 .rotate3:hover {
   transform: rotate(-10deg);
 }
-
 .rotate4 {
   display: flex;
   justify-content: center;
@@ -111,7 +109,6 @@ div .lastPage {
   transition: all 2.4s;
   background-color:#C3F3FF
 }
-
 .rotate4:hover {
   transform: rotate(10deg);
 }
@@ -137,20 +134,15 @@ div .lastPage {
   transform: rotate(275deg);
   transition: all 0.4s;
   }
-
-
 #picture3{
-
   top: 4em;
   right: 10em;
   width: 0.5em;
   height: 10em;
   display: flex;
-  /* justify-content: flex-end; */
   transform: rotate(45deg);
   transition: all 0.4s;
 }
-
 #picture4{
   position: relative;
   top: 1em;
@@ -163,16 +155,13 @@ div .lastPage {
   transition: all 0.4s;
 }
 .witness{
-
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(2, 1fr);
   margin:auto;
   font-size: small;
   padding: 10px;
-
 }  
-
 .box{
   padding: .5rem;
   border-radius: .5rem;
@@ -189,7 +178,6 @@ div .lastPage {
 }
 .rotate2 {
   animation: vomit 20s infinite ease-in-out;
-
 }
 
 @keyframes vomit {
