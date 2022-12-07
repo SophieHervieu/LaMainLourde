@@ -24,7 +24,7 @@ body:hover {
 .effect{
     position: relative;
     animation: mymove 1s;
-    animation-delay: 15s;
+    animation-delay: 20s;
   }
   
   @keyframes mymove {
