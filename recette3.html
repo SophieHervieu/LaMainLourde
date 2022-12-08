@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="recette3.css">
     <link rel="stylesheet" href="headerstyle.css">
-    <link rel="stylesheet" href="css.css">
+    <!--<link rel="stylesheet" href="css.css">-->
     <title>Recette 3</title>
 </head>
 
@@ -36,11 +36,12 @@
         <div class="navtitle1">COCKTAIL</div>
         <div class="navtitle2">MOJITO</div>
         <div><img class="navdeco" src="assets/mojitoNav.png" alt="Verre de Mojito et brin de menthe"></div>
-
-    </header>
-    <!--Recette-->
+    
+</header>
+<!--Recette-->
     <div class="etapes">
         <h1>eT pOuR FiNiiiiR</h1>
+        <div class="logo"><img class="deco" src="assets/decoration.png" alt="image de bas de titre"></div>
         <div class="etape">
             <article>Ajoutez le rhum. Complétez avec l'eau gazeuse.</article>
             <div class="firstImg"></div>
@@ -54,29 +55,28 @@
             <article>Le mojito se sert avec deux pailles qui vont permettre de mélanger le cocktail au fur et à mesure
                 de la dégustation.</article>
             <div class="thirdImg"></div>
-        </div>
+        </div></div>
         <!--Footer-->
-        <script src="script.js"></script>
         <footer>
             <!-- bouton du menu -->
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"></button>
-                <!-- menu deroulant -->
-                <div id="myDropdown" class="dropdown-content">
-                    <a class="boutton" href="#">Accueil</a>
-                    <a class="boutton"
-                        href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient &
-                        Instrument</a>
-                    <a class="boutton" href="#">Recette</a>
-                    <a class="boutton" href="#">Temoignage</a>
-                </div>
-                <div class="preNext">
-                    <!-- page suivante & precedente -->
-                    <a class="previous" href="#"></a>
-                    <a class="next" href="#"></a>
-                </div>
-            </div>
-        </footer>
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"></button> 
+              <!-- menu deroulant -->
+              <div id="myDropdown" class="dropdown-content">
+                  <a class="boutton" href="#">Accueil</a>
+                  <a class="boutton" href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient & Instrument</a>
+                  <a class="boutton" href="#">Recette</a>
+                  <a class="boutton" href="#">Temoignage</a>
+              </div>
+              <div class="preNext">
+                <!-- page suivante & precedente -->
+                  <a class="previous" href="#"></a>
+                  <button onclick="myFunction()" class="dropbtn1"></button>
+                  <a class="next" href="#"></a>
+              </div>
+          </div>
+      </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>

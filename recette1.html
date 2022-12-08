@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="recette1.css">
-    <!--Style du header original<link rel="stylesheet" href="headerstyle.css">-->
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="headerstyle.css">
+    <!--<link rel="stylesheet" href="css.css">-->
     <title>Recette 1</title>
 </head>
 
@@ -33,14 +33,15 @@
         <div>
             <a href="index.html"><img class="imagenav" src="assets/logo.png" alt="Logo La Main Lourde" /></a>
         </div>
-        <div class="navtitle1">COCKTAIL</div>
+        <div class="navtitle1">Cocktail</div>
         <div class="navtitle2">MOJITO</div>
         <div><img class="navdeco" src="assets/mojitoNav.png" alt="Verre de Mojito et brin de menthe"></div>
-
-    </header>
-    <!--Recette-->
+    
+</header>
+<!--Recette-->
     <div class="etapes">
         <h1>La base</h1>
+        <div class="logo"><img class="deco" src="assets/decoration.png" alt="image de bas de titre"></div>
         <div class="etape">
             <div class="firstImg"></div>
             <article>Mettez les glaçons dans un torchon, et pilez à l'aide d'un rouleau à pâtisserie. Si il y a encore
@@ -55,30 +56,29 @@
         </div>
         <div class="etape">
             <div class="thirdImg"></div>
-            <article>Coupez le citron en deux, puis chaque moitié en 6. Mettez 6 morceaux dans chanque verre.</article>
-        </div>
+            <article>Coupez le citron en deux, puis chaque moitié en 6. Mettez 6 morceaux dans chaque verre.</article>
+        </div></div>
         <!--Footer-->
-        <script src="script.js"></script>
         <footer>
             <!-- bouton du menu -->
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"></button>
-                <!-- menu deroulant -->
-                <div id="myDropdown" class="dropdown-content">
-                    <a class="boutton" href="#">Accueil</a>
-                    <a class="boutton"
-                        href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient &
-                        Instrument</a>
-                    <a class="boutton" href="#">Recette</a>
-                    <a class="boutton" href="#">Temoignage</a>
-                </div>
-                <div class="preNext">
-                    <!-- page suivante & precedente -->
-                    <a class="previous" href="#"></a>
-                    <a class="next" href="#"></a>
-                </div>
-            </div>
-        </footer>
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"></button> 
+              <!-- menu deroulant -->
+              <div id="myDropdown" class="dropdown-content">
+                  <a class="boutton" href="#">Accueil</a>
+                  <a class="boutton" href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient & Instrument</a>
+                  <a class="boutton" href="#">Recette</a>
+                  <a class="boutton" href="#">Temoignage</a>
+              </div>
+              <div class="preNext">
+                <!-- page suivante & precedente -->
+                  <a class="previous" href="#"></a>
+                  <button onclick="myFunction()" class="dropbtn1"></button>
+                  <a class="next" href="#"></a>
+              </div>
+          </div>
+      </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>

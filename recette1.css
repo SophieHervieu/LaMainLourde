@@ -16,123 +16,6 @@ body {
     background-position: -350px 500px;
 }
 
-/*Header*/
-.top {
-    height: 60px;
-    background-color: #C3F3FF;
-}
-
-.header {
-    background-color: rgba(255, 255, 255, 0);
-    top: 0px
-}
-
-.imagenav {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    margin: 10px;
-    height: 100px;
-}
-
-.navtitle1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    /* à 10%/50% du parent référent */
-    transform: translate(-50%, -50%);
-    /* décalage de 50% de sa propre taille */
-    font-family: "Fascinate Inline";
-    font-size: 32px;
-    color: #3f3f3f;
-}
-
-.navtitle2 {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-family: "Girassol";
-    font-size: 60px;
-    color: #3f3f3f;
-}
-
-.navdeco {
-    position: absolute;
-    bottom: 470px;
-    right: 15px;
-    height: 200px;
-}
-
-@media screen and (max-width: 768px) {
-    .imagenav {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        margin: 10px;
-        height: 80px;
-    }
-
-    .navtitle1 {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-    }
-
-    .navtitle2 {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 36px;
-    }
-
-    .navdeco {
-        position: absolute;
-        bottom: 20px;
-        right: 15px;
-        height: 150px;
-    }
-
-}
-
-
-@media screen and (max-width: 320px) {
-    .imagenav {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        margin: 10px;
-        height: 45px;
-    }
-
-    .navtitle1 {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 16px;
-    }
-
-    .navtitle2 {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-    }
-
-    .navdeco {
-        position: absolute;
-        bottom: 20px;
-        right: 15px;
-        height: 100px;
-    }
-
-}
-
 /*Titre page*/
 h1 {
     color: black;
@@ -141,19 +24,32 @@ h1 {
     max-width: 65ch;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 /*Etapes*/
 
 .etapes {
     font-family: 'IM Fell DW Pica', serif;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
-    opacity: 2%;
-    filter: blur(10px);
+    align-items: center;
+    filter: blur(5px);
 }
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deco {
+    height: 115px;
+    width: 300px;
+    margin: auto;
+}
+
 
 .etapes:hover {
     filter: blur(0);
@@ -165,49 +61,136 @@ h1 {
    align-items: center;
    padding: 50px;
    display: flex;
-   justify-content: space-around;
-   /*filter: blur(1px);
-   transform: scale (1.4, 1.4);
-   transition: all 3s ease-in;
-   visibility: visible;*/
 }
 
 /*Blocs images*/
 div.firstImg {
     height: 200px;
     width : 180px;
-    background-color: brown;
+    background-image: url('assets/glacePilée.jpg');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.secondImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/feuillesDeMenthe.png');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.thirdImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/trancheDeCitron.png');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 article {
     max-width: 65ch;
-    background-color: #ffffff;
-    border: 0.2ch solid #ffffff;
-    /*backdrop-filter: blur(25px) saturate(69%);
-    -webkit-backdrop-filter: blur(25px) saturate(69%);
-    background-color: rgba(195, 243, 255, 0.28);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);*/
+    background-color: #ffffff00;
+    border: 0.2ch solid #ffffff00;
     padding: 30px;
 }
 
+/* ######################################### /
+/               MENU/NAVIGATION             /
+/ ######################################### */
+
+/* Style menu */
+.dropbtn { 
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+/* hover menu caché */
+.dropbtn:hover, .dropbtn:focus { 
+    background-color: #ffffff00;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 10px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px) saturate(149%);
+     -webkit-backdrop-filter: blur(4px) saturate(149%); 
+    background-color: rgba(133, 147, 152, 0.232);
+    border-radius: 12px;
+    border: 1px solid rgba(105, 105, 105, 0.296);
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+.dropdown-content .boutton {
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .boutton:hover {
+    color: rgb(112, 175, 248);
+    text-shadow: -1px 1px 10px rgba(112, 175, 248, 0.808);
+}
+
+.show {
+    display:block;
+    margin: 0 0px 300px 0;
+}
+
+/* Style des bouttons de changement de page */
+.preNext {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 80px;
+}
+
+.previous {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheGauche.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.next {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheDroite.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+.dropbtn1 {
+    display: none;
+}
+
 /*Version mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .etapes {
         display: flex;
         flex-direction: column;
@@ -222,4 +205,30 @@ article {
     div.thirdImg {
         display: none;
     }
+
+
+.dropbtn1 {
+    display: flex;
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+.preNext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 100vw;
+}
+.dropbtn { 
+    display: none;
+}
+.dropbtn1:hover, .dropbtn1:focus { 
+    background-color: #ffffff00;
+}
 }
