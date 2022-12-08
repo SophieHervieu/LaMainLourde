@@ -12,6 +12,11 @@
 
 
 /* Propriétés body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .mint {
   padding: 0;
   margin: 0;
