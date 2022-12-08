@@ -1,38 +1,48 @@
 /* Police */
 @import 
 url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap'); /* importe la police Google */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
 
 
 /* ######################################### */
 /*               BODY/BACKGROUND             */
 /* ######################################### */
 
+
 /* Propriétés body */
 body { 
+    padding: 0;
     margin: 0; /* supprime la marge du body */
-    background-image: url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"), url("https://s3-alpha-sig.figma.com/img/9fb3/eb30/84506bcc9a4ce9ddc93d9878c6095ae2?Expires=1670803200&Signature=Yb73lyQp~titU2ebft4Qsn6LxCeaQO~LfeacolwbGQ1lhmNiDg2x5EaqOC6-9wItOqXC4xlgjqh2XlAjUCdjgVjc8h7j48S--z8eLk75G-VZ0weFA7ozsycC-jKteB4m78bkaxxMODcb93HD1L36fFL85wBhXOQ4isXnnKk3gWTED3SU7KqUU25U5Yh2vc0BSAQCX6XvDrGalcmmz9yRNQdSC38fw-aFmPF1iElIC51nBjyM9wiTGMaRf0VXpXIhfmPype73bT9kvtFlJWxpdgaoiZlazCri1RXSjaUKrHDUUC8pipmK8VeodKgmnEUh1x9iqtBP4baIDd8PXtHa1w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); /* import photo */
+    background-image: url("assets/mentheArrierePlan.png"); /* import photo */
     background-repeat: no-repeat; /* affiche l'image sans répétition */
-    background-position: -350px 280px, -350px 1680px; /* place l'image dans le body */
+    background-position: -350px 500px; /* place l'image dans le body */
+    /* right -200px bottom 170px */
 }
+
 
 
 /* ######################################### */
 /*                   TITRE                   */
 /* ######################################### */
 
+
 /* Position titre */
 .titre { 
     text-align: center; /* centre le titre */
-    font-size: 45px; /* définit la taille de police */
+    font-size: 60px; /* définit la taille de police */
     padding-top: 75px; /* positionne le titre */
     padding-bottom: 80px; /* positionne le titre */
     font-family: 'IM Fell DW Pica', serif; /* définit le type de police */
 }
 
 
+
 /* ######################################### */
 /*                  ARTICLE                  */
 /* ######################################### */
+
 
 /* Mise en page bloc article */
 .article {
@@ -40,6 +50,7 @@ body {
     display: flex; /* passe l'élément en flex */
     justify-content: center; /* centre le contenu */
     text-align: justify; /* justifie le texte */
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 /* Propriétés de l'image */
@@ -55,14 +66,17 @@ body {
     display: flex; /* passe l'élément en flex */
     flex-direction: column; /* positionne les paragraphes en colone */
     justify-content: center; /* centre les articles */
-    padding: 3rem;
-    font-size: 18px; /* définit la taille de police */
+    padding: 2.8rem;
+    font-size: 25px; /* définit la taille de police */
     font-family: 'IM Fell DW Pica', serif; /* définit la police */
 } 
+
+
 
 /* ######################################### */
 /*                BAS DE PAGE                */
 /* ######################################### */
+
 
 /* Disposition de l'image */
 .mojitoEnd { 
@@ -74,14 +88,24 @@ body {
 /* Style de l'image */
 #mojito { 
     border-radius: 20%; /* arrondis les angles de la photo */
-    width: 80%; /* dimensionne l'image */
-    opacity: 100%;
+    width: 50%; /* dimensionne l'image */
+    opacity: 60%;
+    filter: blur(30px);
 }
+
+#mojito:hover {
+    filter: blur(0px);
+    opacity: 100%;
+    animation: shake 0.2s;
+    transition: 1s;
+}
+
 
 
 /* ######################################### */
 /*               MENU/NAVIGATION             */
 /* ######################################### */
+
 
 /* Style menu */
 .dropbtn { 
@@ -94,6 +118,25 @@ body {
     cursor: pointer;
     margin: 30px;
 }
+
+.dropbtn:hover {
+    animation: shake 0.9s; /* lance l'animation d'une durée de 0.9sec */
+    animation-iteration-count: infinite; /* boucle l'animation */
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 /* hover menu caché */
 .dropbtn:hover, .dropbtn:focus { 
@@ -116,9 +159,10 @@ body {
     box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4px) saturate(149%);
     -webkit-backdrop-filter: blur(4px) saturate(149%);
-    background-color: rgba(133, 147, 152, 0.232);
+    background-color: rgba(138, 211, 240, 0.135);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 .dropdown-content .boutton {
@@ -129,13 +173,13 @@ body {
 }
 
 .dropdown-content .boutton:hover {
-    color: rgb(112, 175, 248);
+    color: rgb(73, 199, 163);
     text-shadow: -1px 1px 10px rgba(112, 175, 248, 0.808);
 }
 
 .show {
     display:block;
-    margin: 0 0px 169px 0;
+    margin: 0 0px 180px 0;
 }
 
 /* Style des bouttons de changement de page */
@@ -167,11 +211,21 @@ body {
 }
 
 
+
 /* ######################################### */
 /*                 RESPONSIVE                */
 /* ######################################### */
 
+
 @media screen and (max-width: 768px) {
+  .titre { 
+    text-align: center; /* centre le titre */
+    font-size: 33px; /* définit la taille de police */
+    padding-top: 75px; /* positionne le titre */
+    padding-bottom: 80px; /* positionne le titre */
+    font-family: 'IM Fell DW Pica', serif; /* définit le type de police */
+  }
+
   .article {
     font-size: 15px;
     padding: 20px;
@@ -192,10 +246,13 @@ body {
     display: flex; 
     justify-content: center;
     padding: 3rem;
-}
+  }
 
-#mojito { 
+  #mojito { 
     border-radius: 50%; 
-    width: 80%; 
-}
+    width: 80%;
+    opacity: 100%;
+    filter: blur(0px);
+    animation: shake 0s;
+  }
 }

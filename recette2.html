@@ -2,16 +2,46 @@
 <html>
 
 <head>
-  	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="recette2.css">
-    <title>Recette originale du Mojito</title>
+    <link rel="stylesheet" href="headerstyle.css">
+    <!--<link rel="stylesheet" href="css.css">-->
+    <title>Recette 2</title>
 </head>
 
 <body>
-    <h1>Ensuiiite</h1>
+    <!--header-->
+    <header class="header">
+        <div class="top"></div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#C3F3FF" fill-opacity="1"
+                    d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,218.7C672,181,768,107,864,74.7C960,43,1056,53,1152,85.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div>
+            <a href="index.html"><img class="imagenav" src="assets/logo.png" alt="Logo La Main Lourde" /></a>
+        </div>
+        <div class="navtitle1">Cocktail</div>
+        <div class="navtitle2">MOJITO</div>
+        <div><img class="navdeco" src="assets/mojitoNav.png" alt="Verre de Mojito et brin de menthe"></div>
+    
+</header>
+<!--Recette-->
     <div class="etapes">
+        <h1>Ensuiiite</h1>
+        <div class="logo"><img class="deco" src="assets/decoration.png" alt="image de bas de titre"></div>
         <div class="etape">
             <article>Ajoutez le sirop de sucre de canne. Le fait d'utiliser un sucre liquide permet de ne pas sentir les
                 cristaux du sucre à la dégustation du cocktail.</article>
@@ -27,7 +57,28 @@
             <article>Ajoutez la glace pilée en laissant 2 cm de libre. Plus il y a de glace, moins elle fondra
                 rapidement.</article>
             <div class="thirdImg"></div>
-        </div>
+        </div></div>
+        <!--Footer-->
+        <footer>
+            <!-- bouton du menu -->
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"></button> 
+              <!-- menu deroulant -->
+              <div id="myDropdown" class="dropdown-content">
+                  <a class="boutton" href="#">Accueil</a>
+                  <a class="boutton" href="https://www.youtube.com/watch?v=F5oi_kIOc-c&ab_channel=MarianisCam">Ingredient & Instrument</a>
+                  <a class="boutton" href="#">Recette</a>
+                  <a class="boutton" href="#">Temoignage</a>
+              </div>
+              <div class="preNext">
+                <!-- page suivante & precedente -->
+                  <a class="previous" href="#"></a>
+                  <button onclick="myFunction()" class="dropbtn1"></button>
+                  <a class="next" href="#"></a>
+              </div>
+          </div>
+      </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>
