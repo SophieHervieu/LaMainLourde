@@ -60,10 +60,10 @@ body {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Header  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-header {
+/* header {
    width: 100%;
-}
-.wave{
+} */
+/* .wave{
     width: 100%;
     height: 100px;
     display: flex;
@@ -164,7 +164,7 @@ svg{
     z-index:2;
     height: var(--navDecoHeight);
     rotate: 10deg;
-}
+} */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Carousel  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
@@ -311,7 +311,7 @@ input {
     font-weight: normal;
     margin-top: var(--marginUstensileTop);
     margin-bottom: var(--marginUstensileBottom);
-    font-size: var(--fontSizeTitle)40px;
+    font-size: var(--fontSizeTitle);
 }
 .container-ustensiles {
     height: fit-content;
@@ -503,7 +503,7 @@ footer{
         --widthContainer: 200px;
     }
     .bloc-ustensiles{
-        margin-top: 74px;
+        margin-top: 125px;
     }
     .container-ustensiles {
         --flexDirectionUstensiles: column;
