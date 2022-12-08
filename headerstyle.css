@@ -11,6 +11,7 @@
     position: static;
     /*Avant : position: sticky; */
     padding-top: 0px;
+    width: 100%;
 }
 
 /* S'applique au logo LaMainLourde du header */
@@ -80,14 +81,14 @@
 /* S'applique au mot COCKTAIL du header */
 .navtitle1 {
     position: absolute;
-    top: 5%;
-    left: 50%;
+    top: 7%;
+    left: 25%;
     /* à 10%/50% du parent référent */
     transform: translate(-50%, -50%);
     /* décalage de 50% de sa propre taille */
     font-family: "Fascinate Inline";
-    font-size: 32px;
-    color: #636262;
+    font-size: 50px;
+    color: #4f5251;
 }
 
 /*  S'applique au mot MOJITO du header */
@@ -97,8 +98,8 @@
     left: 33%;
     transform: translate(-50%, -50%);
     font-family: "Girassol";
-    font-size: 80px;
-    color: #3f3f3f;
+    font-size: 130px;
+    color: #4f5251;
 }
 
 /*  S'applique à l'image déco Verre de mojito à droite du header */
@@ -106,7 +107,7 @@
     position: absolute;
     display: flex;
     top: 40px;
-    right: -10px;
+    right: 35px;
     height: 250px;
     rotate: 10deg;
 }
