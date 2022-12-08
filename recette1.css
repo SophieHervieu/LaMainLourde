@@ -16,123 +16,6 @@ body {
     background-position: -350px 500px;
 }
 
-/*Header*/
-.top {
-    height: 60px;
-    background-color: #C3F3FF;
-}
-
-.header {
-    background-color: rgba(255, 255, 255, 0);
-    top: 0px
-}
-
-.imagenav {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    margin: 10px;
-    height: 100px;
-}
-
-.navtitle1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    /* à 10%/50% du parent référent */
-    transform: translate(-50%, -50%);
-    /* décalage de 50% de sa propre taille */
-    font-family: "Fascinate Inline";
-    font-size: 32px;
-    color: #3f3f3f;
-}
-
-.navtitle2 {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-family: "Girassol";
-    font-size: 60px;
-    color: #3f3f3f;
-}
-
-.navdeco {
-    position: absolute;
-    bottom: 470px;
-    right: 15px;
-    height: 200px;
-}
-
-@media screen and (max-width: 768px) {
-    .imagenav {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        margin: 10px;
-        height: 80px;
-    }
-
-    .navtitle1 {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-    }
-
-    .navtitle2 {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 36px;
-    }
-
-    .navdeco {
-        position: absolute;
-        bottom: 20px;
-        right: 15px;
-        height: 150px;
-    }
-
-}
-
-
-@media screen and (max-width: 320px) {
-    .imagenav {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        margin: 10px;
-        height: 45px;
-    }
-
-    .navtitle1 {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 16px;
-    }
-
-    .navtitle2 {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-    }
-
-    .navdeco {
-        position: absolute;
-        bottom: 20px;
-        right: 15px;
-        height: 100px;
-    }
-
-}
-
 /*Titre page*/
 h1 {
     color: black;
@@ -141,19 +24,31 @@ h1 {
     max-width: 65ch;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 /*Etapes*/
 
 .etapes {
     font-family: 'IM Fell DW Pica', serif;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
-    opacity: 2%;
-    filter: blur(10px);
+    filter: blur(5px);
 }
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deco {
+    height: 115px;
+    width: 300px;
+    margin: auto;
+}
+
 
 .etapes:hover {
     filter: blur(0);
@@ -166,48 +61,45 @@ h1 {
    padding: 50px;
    display: flex;
    justify-content: space-around;
-   /*filter: blur(1px);
-   transform: scale (1.4, 1.4);
-   transition: all 3s ease-in;
-   visibility: visible;*/
 }
 
 /*Blocs images*/
 div.firstImg {
     height: 200px;
     width : 180px;
-    background-color: brown;
+    background-image: url('assets/glacePilée.jpg');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.secondImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/feuillesDeMenthe.png');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.thirdImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/trancheDeCitron.png');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 article {
     max-width: 65ch;
-    background-color: #ffffff;
-    border: 0.2ch solid #ffffff;
-    /*backdrop-filter: blur(25px) saturate(69%);
-    -webkit-backdrop-filter: blur(25px) saturate(69%);
-    background-color: rgba(195, 243, 255, 0.28);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);*/
+    background-color: #ffffff00;
+    border: 0.2ch solid #ffffff00;
     padding: 30px;
 }
 
 /*Version mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .etapes {
         display: flex;
         flex-direction: column;
