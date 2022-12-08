@@ -23,32 +23,63 @@ h1 {
     max-width: 65ch;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 /*Etapes*/
 article {
     max-width: 50ch;
-    background-color: #ffffff;
-    border: 0.2ch solid #ffffff;
+    background-color: #ffffff00;
+    border: 0.2ch solid #ffffff00;
     padding: 30px;
     height: 200px;
 }
 
 .etapes {
     font-family: 'IM Fell DW Pica', serif;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
-    opacity: 20%;
-    filter: blur(30px);
+    filter: blur(20px);
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deco {
+    height: 115px;
+    width: 300px;
+    margin: auto;
 }
 
 .etapes:hover {
     filter: blur(0);
     opacity: 100%;
     transition: 2s;
+    animation: shake 0.8s;
 }
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-3px, 0, 0);
+    }
+
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-20px, 20px, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(20px, -20px, 0);
+    }
+}
+
 
 .etape {
    align-items: center;
@@ -61,27 +92,33 @@ article {
 div.firstImg {
     height: 200px;
     width : 180px;
-    background-color: brown;
+    background-image: url('assets/EauGazeuseMojito.jpg');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.secondImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/shaker.jpeg');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 div.thirdImg {
     height: 200px;
     width: 180px;
-    background-color: brown;
+    background-image: url('assets/mojitoDeuxPailles.jpeg');
+    background-size: cover;
+    border-radius: 25px;
     margin: 30px;
 }
 
 
 /*Version mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .etapes {
         display: flex;
         flex-direction: column;
