@@ -35,6 +35,7 @@ h1 {
     font-size: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     filter: blur(5px);
 }
 
@@ -60,7 +61,6 @@ h1 {
    align-items: center;
    padding: 50px;
    display: flex;
-   justify-content: space-around;
 }
 
 /*Blocs images*/
@@ -98,6 +98,97 @@ article {
     padding: 30px;
 }
 
+/* ######################################### /
+/               MENU/NAVIGATION             /
+/ ######################################### */
+
+/* Style menu */
+.dropbtn { 
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+/* hover menu caché */
+.dropbtn:hover, .dropbtn:focus { 
+    background-color: #ffffff00;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 10px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px) saturate(149%);
+     -webkit-backdrop-filter: blur(4px) saturate(149%); 
+    background-color: rgba(133, 147, 152, 0.232);
+    border-radius: 12px;
+    border: 1px solid rgba(105, 105, 105, 0.296);
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+.dropdown-content .boutton {
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .boutton:hover {
+    color: rgb(112, 175, 248);
+    text-shadow: -1px 1px 10px rgba(112, 175, 248, 0.808);
+}
+
+.show {
+    display:block;
+    margin: 0 0px 300px 0;
+}
+
+/* Style des bouttons de changement de page */
+.preNext {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 80px;
+}
+
+.previous {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheGauche.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.next {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheDroite.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+.dropbtn1 {
+    display: none;
+}
+
 /*Version mobile*/
 @media screen and (max-width: 768px) {
     .etapes {
@@ -114,4 +205,30 @@ article {
     div.thirdImg {
         display: none;
     }
+
+
+.dropbtn1 {
+    display: flex;
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+.preNext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 100vw;
+}
+.dropbtn { 
+    display: none;
+}
+.dropbtn1:hover, .dropbtn1:focus { 
+    background-color: #ffffff00;
+}
 }
