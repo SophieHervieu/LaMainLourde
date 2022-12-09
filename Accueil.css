@@ -8,10 +8,14 @@
 /*               BODY/BACKGROUND             */
 /* ######################################### */
 
+
+/* Propriétés body */
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
+
 /* Propriétés body */
 .mint {
   /* supprime la marge du body */
