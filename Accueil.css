@@ -1,0 +1,226 @@
+/* Police */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap'); /* importe les polices Google */
+
+
+
+/* ######################################### */
+/*               BODY/BACKGROUND             */
+/* ######################################### */
+
+
+/* Propriétés body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Propriétés body */
+.mint {
+  /* supprime la marge du body */
+  background-image: url("assets/mentheArrierePlan.png");
+  /* import photo */
+  background-repeat: no-repeat;
+  /* affiche l'image sans répétition */
+  background-position: -350px 500px;
+  /* place l'image dans le body */
+}
+
+
+
+/* ######################################### */
+/*                   TITRE                   */
+/* ######################################### */
+
+
+.blocTitre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+
+/* Position titre */
+.titre {
+  text-align: center;
+  /* centre le titre */
+  font-size: 50px;
+  /* définit la taille de police */
+  padding-top: 75px;
+  /* positionne le titre */
+  padding-bottom: 0px;
+  /* positionne le titre */
+  font-family: 'IM Fell DW Pica', serif;
+  /* définit le type de police */
+  margin-bottom: 0px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  height: 160px;
+}
+
+/* ######################################### */
+/*                  ARTICLE                  */
+/* ######################################### */
+
+
+/* Mise en page bloc article */
+.article {
+  padding: 50px;
+  /* positionne le bloc */
+  display: flex;
+  /* passe l'élément en flex */
+  justify-content: center;
+  /* centre le contenu */
+  text-align: justify;
+  /* justifie le texte */
+  font-family: 'IM Fell DW Pica', serif;
+}
+
+/* Propriétés de l'image */
+.drake {
+  height: 250px;
+  /* taille de l'image */
+  margin-top: 2.5rem;
+  /* définit l'espace de marge top */
+  border-radius: 40%;
+  /* arrondis les angles de la photo */
+  padding: 30px;
+}
+
+/* Mise en page de l'article */
+.histoire {
+  display: flex;
+  /* passe l'élément en flex */
+  flex-direction: column;
+  /* positionne les paragraphes en colone */
+  justify-content: center;
+  /* centre les articles */
+  padding: 2.8rem;
+  font-size: 30px;
+  /* définit la taille de police */
+  font-family: 'IM Fell DW Pica', serif;
+  /* définit la police */
+}
+
+
+
+/* ######################################### */
+/*                BAS DE PAGE                */
+/* ######################################### */
+
+
+/* Disposition de l'image */
+.mojitoEnd {
+  display: flex;
+  /* passe l'élément en flex */
+  justify-content: center;
+  /* centre le contenu */
+  padding: 3rem;
+}
+
+/* Style de l'image */
+#mojito {
+  border-radius: 20%;
+  /* arrondis les angles de la photo */
+  width: 50%;
+  /* dimensionne l'image */
+  opacity: 60%;
+  filter: blur(30px);
+}
+
+/* Animation flou image */
+#mojito:hover {
+  filter: blur(0px);
+  opacity: 100%;
+  animation: shake 0.3s;
+  transition: 0.8s;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+
+/* ######################################### */
+/*                 RESPONSIVE                */
+/* ######################################### */
+
+
+@media screen and (max-width: 768px) {
+  .titre {
+    text-align: center;
+    /* centre le titre */
+    font-size: 33px;
+    /* définit la taille de police */
+    padding-top: 75px;
+    /* positionne le titre */
+    padding-bottom: 0px;
+    /* positionne le titre */
+    font-family: 'IM Fell DW Pica', serif;
+    /* définit le type de police */
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0px;
+    height: 110px;
+  }
+
+  .article {
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drake {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  .mojitoEnd {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  #mojito {
+    border-radius: 50%;
+    width: 80%;
+    opacity: 100%;
+    filter: blur(0px);
+    animation: shake 0s;
+  }
+}

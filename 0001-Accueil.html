@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accueil</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top"></div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#C3F3FF" fill-opacity="1"
+                    d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,218.7C672,181,768,107,864,74.7C960,43,1056,53,1152,85.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div>
+            <a href="0001-Accueil.html"><img class="imagenav" src="assets/logo.png" alt="Logo La Main Lourde" /></a>
+        </div>
+        <div class="navtitle1">COCKTAIL</div>
+        <div class="navtitle2">MOJITO</div>
+        <div><img class="navdeco" src="https://s3-alpha-sig.figma.com/img/5856/eb86/2db00b925a9ea42bddbb88fcfa36e9ee?Expires=1671408000&Signature=Jr4fVBIaStigPku81ropEiGqjNckwTMpLKSMsNT9l~OTMk7BUbwSrQFCH7H3A3hwiH9khyW-y31tcqv8S-IiIlVHHbAs5t0oEony7xtUW80V7rim4li3I2DBECaG3lk-e5LKmf7owqdcAYTOSv13NXa4eTJgmT1j0rlSRKfAEOxwlNk4VYEpEQ52eYYtsbvI~bgUxOIw-pf2wWHLuNmtyrvpmsidi3GT-vLdIrbpgBrhr~MBRxoXnh8HM8ePcSFuDOnbXUm06hCGl9Ybqy4SySZdEFmwp3cma3m6uwyjXvoP2WMGw-GPnLAUEJo5mZNYiOP6WGfbgJubfPBYaCey2w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="Verre de Mojito et brin de menthe"></div>
+          
+</header>
+
+    <div class="app">
+
+    <!-- TITRE -->
+    <div class="titrelogo">
+    <h1 class="titre">UN PEU D'HISTOIRE ...</h1>
+    </div>
+    
+
+    <!-- ARTICLE -->
+    <!-- Bloc image & article-->
+    <div class="article">
+    
+        <!-- Photo Drake -->
+        <img class="drake" src="assets/sirDrake.png" alt="Représentation de Sir Francis Drake">
+
+    <!-- Histoire du Mojito -->
+    <article class="histoire">
+            <p><b><SPAN STYLE="font-size:28px">Le mojito est né, Vive le mojito !</SPAN></b></p>
+            <p><i>Au XVIe siècle, le Nouveau-Monde, qui deviendra plus tard l’Amérique, est encore un pays à explorer, et pour les occidentaux, un espace à exploiter. Les espagnols ont colonisé une grande part de l’Amérique du sud, et l’Angleterre, immense puissance colonisatrice ne le voit pas d’un bon œil.
+            <br>Du coup, la reine Elizabeth I d’Angleterre encourage ses corsaires à piller les villes espagnoles. Parmi eux, Sir Francis Drake qui s’en va naviguer vers Cuba. On dit qu’il était connu pour ses pillages d’une violence inouïe, mais peut-être que cela n’est que légende.<br><br></i></p>
+        
+            <i>Arrivé à Cuba, Sir Francis Drake aurait adoré siroter des feuilles de menthe pilées avec du tafia (rhum industriel).
+            D’autres racontent que c’est son subordonné, Richard Drake, qui aurait inventé le cocktail et l’a appelé El Draque (le dragon) en référence au capitaine.
+            <br>Lui, aurait utilisé de l’aguardiente, du rhum non raffiné et non du tafia.
+            Le fait est que cette mixture était idéale pour les marins : la menthe permettait de lutter contre la nausée, le citron vert contre le scorbut (une maladie de carence alimentaire) et le sucre pour adoucir le goût.</i></p>
+        
+            <p><i>C’est vers le milieu des années 1800 que la recette du Draque devient le mojito. On utilise alors du rhum raffiné commercialisé par de grandes entreprises comme Bacardi ou Havana.</i></p> 
+        
+            <p><i>Enfin, c'est Ernest Hemingway qui a popularisé le cocktail. En 1939, le célèbre écrivain s’installe à Cuba et vient régulièrement au bar de la Havane, La Bodeguita del Medio. Aujourd'hui, c’est l’un des cocktails les plus demandés dans le monde.</i></p> 
+    </article>
+</div>
+
+
+<!-- IMAGE BAS DE PAGE -->
+<div class="mojitoEnd">
+    <img id="mojito" src="assets/mojito.jpeg" alt="un verre de mojito sur une table">
+    <div class="mint2"></div>
+</div>
+
+
+<!-- FOOTER / MENU -->
+<footer>
+  <!-- Bouton du menu -->
+  <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"></button>
+
+      <!-- Menu déroulant -->
+      <div id="myDropdown" class="dropdown-content">
+          <a class="boutton" href="0001-Accueil.html">Accueil</a>
+          <a class="boutton" href="page2.html">Ingredient & Instrument</a>
+          <a class="boutton" href="#">Recette</a>
+          <a class="boutton" href="#">Temoignage</a>
+      </div>
+
+      <!-- Page suivante & précédente -->
+      <div class="preNext">
+          <a class="next" href="page2.html"></a>
+      </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Link to JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

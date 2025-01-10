@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingrédients et Ustensiles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ingredientsStyles.css">
+  <link rel="stylesheet" href="css.css">
+  <link href="headerstyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  HEADER  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <header class="header">
+
+  <div class="top"></div>
+  <div class="wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#C3F3FF" fill-opacity="1"
+              d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,218.7C672,181,768,107,864,74.7C960,43,1056,53,1152,85.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+      </svg>
+  </div>
+  <div>
+      <a href="Accueil.html"><img class="imagenav" src="assets/logo.png" alt="Logo La Main Lourde" /></a>
+  </div>
+  <div class="navtitle1">COCKTAIL</div>
+  <div class="navtitle2">MOJITO</div>
+  <div><img class="navdeco" src="assets/mojitoNav.png" alt="Verre de Mojito et brin de menthe"></div>
+
+
+</header>
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  CAROUSEL  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <section id="blocMain">
+    <div class="bloc-carousel">
+      <h1 class="titre-carousel">Les ingrédients</h1>
+      <img src="assets/decoration.png" alt="" class="deco">
+      <div class="slider">
+        <div class="container">
+          <input type="radio" name="slider" class="d-none" id="s1" checked>
+          <input type="radio" name="slider" class="d-none" id="s2">
+          <input type="radio" name="slider" class="d-none" id="s3">
+          <input type="radio" name="slider" class="d-none" id="s4">
+          <input type="radio" name="slider" class="d-none" id="s5">
+          <input type="radio" name="slider" class="d-none" id="s6">
+
+          <div class="cards">
+            <label for="s1" id="slide1">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/mentheIngredient.png" alt="Massif de menthe">
+                </div>
+              </div>
+            </label>
+            <label for="s2" id="slide2">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/rhum.png" alt="Bouteille de rhum">
+                </div>
+              </div>
+            </label>
+            <label for="s3" id="slide3">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/eauGazeuse.png" alt="Nuage de bulle d'eau gazeuse">
+                </div>
+              </div>
+            </label>
+            <label for="s4" id="slide4">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/glacons.png" alt="Glaçons">
+                </div>
+              </div>
+            </label>
+            <label for="s5" id="slide5">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/citron.png" alt="Citrons coupés">
+                </div>
+              </div>
+            </label>
+            <label for="s6" id="slide6">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/siropDeCanne.png" alt="Presse à cannes à sucre">
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  USTENSILES  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <div class="bloc-ustensiles">
+      <h1 class="titre-ustensile">Les ustensiles</h1>
+      <img src="assets/decoration.png" alt="" class="deco">
+      <!-- Container ustensiles-->
+      <div class="container-ustensiles">
+        <img src="assets/couteauCuisine.png" alt="Couteau">
+        <img src="assets/pillon.png" alt="Pilon">
+        <img src="assets/mojito.jpeg" alt="Verre">
+        <img src="assets/torchon.png" alt="Torchon">
+      </div>
+    </div>
+  </section>
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  FOOTER  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <footer>
+    <!-- bouton du menu -->
+    <button onclick="myFunction()" class="dropbtn"></button>
+    <!-- menu deroulant -->
+    <div id="myDropdown" class="dropdown-content">
+      <a class="boutton" href="Accueil.html">Accueil</a>
+      <a class="boutton" href="Ingredient.html">Ingrédients & Ustensiles</a>
+      <a class="boutton" href="recette1.html">Recette</a>
+      <a class="boutton" href="lastPage.html">Témoignages</a>
+    </div>
+    <div class="preNext">
+      <!-- page suivante & precedente -->
+      <a class="previous" href="Accueil.html"></a>
+      <button onclick="myFunction()" class="dropbtn1"></button>
+      <a class="next" href="recette1.html"></a>
+    </div>
+  </footer>
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+  <script src="script.js"></script>
+</body>
+
+</html>

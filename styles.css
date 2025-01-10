@@ -1,0 +1,258 @@
+/* Police */
+@import 
+url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap'); /* importe la police Google */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+
+
+/* ######################################### */
+/*               BODY/BACKGROUND             */
+/* ######################################### */
+
+
+/* Propriétés body */
+body { 
+    padding: 0;
+    margin: 0; /* supprime la marge du body */
+    background-image: url("assets/mentheArrierePlan.png"); /* import photo */
+    background-repeat: no-repeat; /* affiche l'image sans répétition */
+    background-position: -350px 500px; /* place l'image dans le body */
+    /* right -200px bottom 170px */
+}
+
+
+
+/* ######################################### */
+/*                   TITRE                   */
+/* ######################################### */
+
+
+/* Position titre */
+.titre { 
+    text-align: center; /* centre le titre */
+    font-size: 60px; /* définit la taille de police */
+    padding-top: 75px; /* positionne le titre */
+    padding-bottom: 80px; /* positionne le titre */
+    font-family: 'IM Fell DW Pica', serif; /* définit le type de police */
+}
+
+
+
+/* ######################################### */
+/*                  ARTICLE                  */
+/* ######################################### */
+
+
+/* Mise en page bloc article */
+.article {
+    padding: 50px; /* positionne le bloc */
+    display: flex; /* passe l'élément en flex */
+    justify-content: center; /* centre le contenu */
+    text-align: justify; /* justifie le texte */
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+/* Propriétés de l'image */
+.drake { 
+    height: 250px; /* taille de l'image */
+    margin-top: 2.5rem; /* définit l'espace de marge top */
+    border-radius: 30%; /* arrondis les angles de la photo */
+    padding: 30px;
+}
+
+/* Mise en page de l'article */
+.histoire {
+    display: flex; /* passe l'élément en flex */
+    flex-direction: column; /* positionne les paragraphes en colone */
+    justify-content: center; /* centre les articles */
+    padding: 2.8rem;
+    font-size: 25px; /* définit la taille de police */
+    font-family: 'IM Fell DW Pica', serif; /* définit la police */
+} 
+
+
+
+/* ######################################### */
+/*                BAS DE PAGE                */
+/* ######################################### */
+
+
+/* Disposition de l'image */
+.mojitoEnd { 
+    display: flex; /* passe l'élément en flex */
+    justify-content: center; /* centre le contenu */
+    padding: 3rem;
+}
+
+/* Style de l'image */
+#mojito { 
+    border-radius: 20%; /* arrondis les angles de la photo */
+    width: 50%; /* dimensionne l'image */
+    opacity: 60%;
+    filter: blur(30px);
+}
+
+#mojito:hover {
+    filter: blur(0px);
+    opacity: 100%;
+    animation: shake 0.2s;
+    transition: 1s;
+}
+
+
+
+/* ######################################### */
+/*               MENU/NAVIGATION             */
+/* ######################################### */
+
+
+/* Style menu */
+.dropbtn { 
+    background-image: url("assets/Button.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.dropbtn:hover {
+    animation: shake 0.9s; /* lance l'animation d'une durée de 0.9sec */
+    animation-iteration-count: infinite; /* boucle l'animation */
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/* hover menu caché */
+.dropbtn:hover, .dropbtn:focus { 
+    background-color: #ffffff00;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 10px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px) saturate(149%);
+    -webkit-backdrop-filter: blur(4px) saturate(149%);
+    background-color: rgba(138, 211, 240, 0.135);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+.dropdown-content .boutton {
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .boutton:hover {
+    color: rgb(73, 199, 163);
+    text-shadow: -1px 1px 10px rgba(112, 175, 248, 0.808);
+}
+
+.show {
+    display:block;
+    margin: 0 0px 180px 0;
+}
+
+/* Style des bouttons de changement de page */
+.preNext {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 80px;   
+}
+
+.previous {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheGauche.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.next {
+    margin: 0px;
+    height: 15px;
+    width: 30px;
+    background-image: url("assets/flecheDroite.png");
+    background-color: #ffffff00;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+
+/* ######################################### */
+/*                 RESPONSIVE                */
+/* ######################################### */
+
+
+@media screen and (max-width: 768px) {
+  .titre { 
+    text-align: center; /* centre le titre */
+    font-size: 33px; /* définit la taille de police */
+    padding-top: 75px; /* positionne le titre */
+    padding-bottom: 80px; /* positionne le titre */
+    font-family: 'IM Fell DW Pica', serif; /* définit le type de police */
+  }
+
+  .article {
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drake {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  .mojitoEnd { 
+    display: flex; 
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  #mojito { 
+    border-radius: 50%; 
+    width: 80%;
+    opacity: 100%;
+    filter: blur(0px);
+    animation: shake 0s;
+  }
+}
